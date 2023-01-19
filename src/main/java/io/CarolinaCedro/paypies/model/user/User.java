@@ -17,6 +17,9 @@ import java.sql.Timestamp;
 @IdClass(UserId.class)
 public class User {
 
+    @Column(unique=true)
+    private Long id;
+
     @Id
     private String cpfOrCnpj;
 

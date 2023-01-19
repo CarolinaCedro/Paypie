@@ -16,6 +16,9 @@ import java.sql.Timestamp;
 @IdClass(LogistId.class)
 public class Logist {
 
+    @Column(unique=true)
+    private Long id;
+
     @Id
     private String cpfOrCnpj;
 
